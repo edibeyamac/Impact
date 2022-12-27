@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "msnodesqlv8": "^3.0.1",
+    "mssql": "^9.0.1"
+  },
+  "name": "impact",
+  "description": "Thanks for downloading this template!",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edibeyamac/Impact.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edibeyamac/Impact/issues"
+  },
+  "homepage": "https://github.com/edibeyamac/Impact#readme"
+}
