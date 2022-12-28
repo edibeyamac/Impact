@@ -1,33 +1,15 @@
-const sql = require('mssql/msnodesqlv8');
-
-const config = {
-  server: 'localhost',
-    driver:"msnodesqlv8",
-    database: 'Library Database',
-    options:{
-        useUTC:true,
-        trustedConnection:true
-    },
+//js
+const fs = require('fs');
+const express = require('express');
+const app = express();
+var path = require('path');
+const PORT = process.env.PORT || 5500;
+app.listen(PORT, console.log("Server don start for port: " + PORT))
 
 
-};
+const homeController = require('./routes/index.js')
 
-const pool = new sql.ConnectionPool(config);
 
-pool.connect((err) => {
-  if (err) {
-    console.error(err);
-  } else {
-    console.log('Connected to database');
+app.use('/public', express.static(path.join(__dirname, 'public')));
 
-    const request = new sql.Request(pool);
-    request.query('SELECT * FROM Users', (err, result) => {
-      if (err) {
-        console.error(err);
-      } else {
-        console.log(result);
-      }
-    });
-    
-  }
-});
+app.use('/', homeController );
