@@ -1,0 +1,18 @@
+<table>
+    <tr>
+      <th>Book ID</th>
+      <th>Category Name</th>
+      <th>Publisher Name</th>
+    </tr>
+    <% data.forEach(function(item) { %>
+    <tr>
+      <td><%= item.Book_ID %></td>
+      <td><%= item.Category_name %></td>
+      <td><%= item.Publisher_name %></td>
+      <td><a href="/getBookView?id=<%= item.Book_ID %>">Detail</a></td>
+      <td><a href="/createBookView">Create Book</a></td>
+      <td><a href="/deleteBookView?id=<%= item.Book_ID %>">Delete Book</a></td>
+      
+    </tr>
+    <% }); %>
+  </table>

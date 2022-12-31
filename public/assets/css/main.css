@@ -1748,9 +1748,54 @@ section {
   background-color: var(--color-primary);
   height: 100%;
   padding: 20px;
-  border-radius: 10px 0 0 10px;
+  border-radius: 10px 10px 10px 10px;
   box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+  margin-right: 15px;
 }
+
+.contact .info-container h6 {
+  color: white;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-container .book h6 {
+  color: white
+}
+
+.book {
+    background-color: var(--color-primary);
+    width: 80%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 2px 25px rgb(0 0 0 / 10%);
+    margin-bottom: 10px;
+}
+
+.book-header  {
+text-align: center;
+}
+
+.book-header h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: #000;
+}
+
+
 
 .contact .info-item {
   width: 100%;
